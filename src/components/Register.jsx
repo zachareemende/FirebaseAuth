@@ -20,25 +20,22 @@ export const Register = () => {
   };
   return (
     <div>
-      <div>
-        <h3> Register User </h3>
-        <input
-          placeholder="Email"
-          onChange={(event) => {
-            setRegisterEmail(event.target.value);
-          }}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          onChange={(event) => {
-            setRegisterPassword(event.target.value);
-          }}
-        />
+      <h3> Register User </h3>
+      <input
+        placeholder="Email"
+        onChange={(event) => {
+          setRegisterEmail(event.target.value);
+        }}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        onChange={(event) => {
+          setRegisterPassword(event.target.value);
+        }}
+      />
 
-        <button onClick={register}> Create User</button>
-      </div>
+      <button onClick={register}> Create User</button>
     </div>
   );
 };
-

@@ -21,25 +21,22 @@ export const Login = () => {
 
   return (
     <div>
-      <div>
-        <h3> Login </h3>
-        <input
-          placeholder="Email"
-          onChange={(event) => {
-            setLoginEmail(event.target.value);
-          }}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          onChange={(event) => {
-            setLoginPassword(event.target.value);
-          }}
-        />
+      <h3> Login </h3>
+      <input
+        placeholder="Email"
+        onChange={(event) => {
+          setLoginEmail(event.target.value);
+        }}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        onChange={(event) => {
+          setLoginPassword(event.target.value);
+        }}
+      />
 
-        <button onClick={login}> Login</button>
-      </div>
+      <button onClick={login}> Login</button>
     </div>
   );
 };
-

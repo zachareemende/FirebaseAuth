@@ -48,7 +48,7 @@ export const Login = () => {
         </button>
 
         <p className="mt-4">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link to="/" className="text-blue-500 hover:underline">
             Register
           </Link>

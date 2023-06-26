@@ -52,7 +52,7 @@ function App() {
         </div>
       ) : (
         <div className="flex flex-grow">
-          <div className="flex items-center justify-center flex-1 rounded-r-xl shadow-2xl bg-blue-400">
+          <div className="flex items-center justify-center flex-1 bg-gradient-to-r from-blue-400 to-white">
             <img
               src={location.pathname === "/login" ? keyGuy : cloudGuy}
               className="h-auto w-3/4 max-h-full"

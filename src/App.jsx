@@ -6,8 +6,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Register } from "./components/Register";
 import { Login } from "./components/Login";
 
-import cloudGuy from "./assets/cloudGuy.svg";
-import keyGuy from "./assets/keyGuy.svg";
+import cloudGuy from "./assets/images/cloudGuy.svg";
+import keyGuy from "./assets/images/keyGuy.svg";
 
 function App() {
   const [user, setUser] = useState(null);

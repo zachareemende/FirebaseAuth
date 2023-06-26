@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  onAuthStateChanged,
-  signOut,
-} from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import "./App.css";
 import { auth } from "./firebase-config";
 
@@ -46,8 +43,8 @@ function App() {
         </div>
       ) : (
         <div>
-          <Register/>
-          <Login/>
+          <Register />
+          <Login />
         </div>
       )}
     </div>

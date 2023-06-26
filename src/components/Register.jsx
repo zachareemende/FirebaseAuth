@@ -18,6 +18,7 @@ export const Register = () => {
       console.log(error.message);
     }
   };
+
   return (
     <div>
       <h3> Register User </h3>

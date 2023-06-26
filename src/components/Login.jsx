@@ -1,6 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase-config";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const [loginEmail, setLoginEmail] = useState("");
@@ -20,23 +21,39 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <h3> Login </h3>
-      <input
-        placeholder="Email"
-        onChange={(event) => {
-          setLoginEmail(event.target.value);
-        }}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(event) => {
-          setLoginPassword(event.target.value);
-        }}
-      />
+    <div className="flex items-center justify-center h-full">
+      <div className="flex flex-col items-center w-3/4">
+        <h3 className="mb-14 text-2xl">Login</h3>
+        <input
+          placeholder="Email"
+          className="mb-14 bg-white border-b w-full p-5"
+          onChange={(event) => {
+            setLoginEmail(event.target.value);
+          }}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          className="mb-14 bg-white border-b w-full p-5"
+          onChange={(event) => {
+            setLoginPassword(event.target.value);
+          }}
+        />
 
-      <button onClick={login}> Login</button>
+        <button
+          onClick={login}
+          className=" w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Login
+        </button>
+
+        <p className="mt-4">
+          Don't have an account?{" "}
+          <Link to="/" className="text-blue-500 hover:underline">
+            Register
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };

@@ -9,6 +9,8 @@ import { Login } from "./components/Login";
 import cloudGuy from "./assets/images/cloudGuy.svg";
 import keyGuy from "./assets/images/keyGuy.svg";
 
+import "./assets/css/App.css";
+
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -55,7 +57,7 @@ function App() {
           <div className="flex items-center justify-center flex-1 bg-gradient-to-r from-blue-400 to-white">
             <img
               src={location.pathname === "/login" ? keyGuy : cloudGuy}
-              className="h-auto w-3/4 max-h-full"
+              className="h-auto w-3/4 max-h-full floating-image"
               alt="Image"
             />
           </div>

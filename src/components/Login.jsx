@@ -42,7 +42,7 @@ export const Login = () => {
 
         <button
           onClick={login}
-          className=" w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className=" w-full bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cool-button"
         >
           Login
         </button>
